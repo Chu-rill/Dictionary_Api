@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input::placeholder{
+            font-size: 1.5rem;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1{
+            color: white;
+            font-size: 3rem;
+        }
+        .container{
+            width: 500px;
+            min-height: 200px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px;
+            background-color: color-mix(in srgb, white, black 25%);
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            overflow: scroll;
+        }
+        .input{
+            width: 100%;
+            padding-top: 10px;
+            padding-left: 15px;
+        }
+        .input input{
+            width: 70%;
+            height: 30px;
+        }
+        .input button{
+            width: 20%;
+            height: 30px;
+            cursor: pointer;
+        }
+        .input h1{
+            color: black;
+        }
+    </style>
+</head>
+<body style="background-color: #151e3fff;">
+    <h1>Dictionary</h1>
+    <div class="container">
+        <div class="input">
+            <input type="text" placeholder="Word" class="word">
+            <button>Search</button>
+            <h1 class="diff"></h1>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
